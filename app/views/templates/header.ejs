@@ -1,0 +1,11 @@
+<header>
+    <a href="/"><h1>Mercadinho</h1></a>
+
+    <nav>
+        <a href="/" <%- page === "home" ? "class='actual-page'" : "" %>>Início</a>
+        <a href="/create-product" <%- page === "create-product" ? "class='actual-page'" : "" %>>Criar produto</a>
+        <a href="/list-products" <%- page === "list-products" ? "class='actual-page'" : "" %>>Listar produtos</a>
+        <a href="/create-category" <%- page === "create-category" ? "class='actual-page'" : "" %>>Criar categoria</a>
+        <a href="/list-categories" <%- page === "list-categories" ? "class='actual-page'" : "" %>>Listar categorias</a>
+    </nav>
+</header>

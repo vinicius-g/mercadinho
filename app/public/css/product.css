@@ -1,0 +1,10 @@
+.product-title {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}

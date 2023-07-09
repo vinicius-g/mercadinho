@@ -1,0 +1,13 @@
+<main>
+    <h2 class="product-title"><%- data.product.name %></h2>
+    <span class="product-stock">Em estoque: <%- data.product.stock %></span>
+    <span class="product-price">Preço: R$ <%- data.product.price %></span>
+    <span class="product-updated-at">Modificado pela última vez em <%- data.product.updated_at.toLocaleString("pt-br", {year: "numeric", month: "long", day: "numeric"}) %></span>
+
+    <div class="categories">
+        <h3>Categorias:</h3>
+        <% data.product.categories.forEach(category => { %>
+            <span class="category"><%- category.name %></span>
+        <% }) %>
+    </div>
+</main>
